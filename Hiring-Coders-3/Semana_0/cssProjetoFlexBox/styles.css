@@ -1,0 +1,126 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    color:rgba(250, 250, 250, 0.879);
+    font-family: 'Roboto', sans-serif;
+}
+
+ul {
+    list-style: none;
+    line-height: 1.5;
+}
+
+a {
+    text-decoration: none;
+}
+
+body {
+    /* background-image: url(./img/background.jpg);
+    background-repeat: no-repeat;
+    background-position: center center fixed; */
+    background: url(./img/background.jpg) no-repeat center center fixed;
+    background-size: cover;
+}
+
+
+header {
+    display: flex;
+    justify-content: space-between;
+}
+
+header ul {
+    flex-direction:column;
+    padding-top: 15px;
+    padding-right: 15px;
+}
+
+.container {
+    text-align: center;
+    align-items: center;
+    line-height: 1.2;
+}
+
+.container .name h1 {
+    font-size: 75px;
+}
+.container .name h5 {
+    font-size: 35px;
+}
+
+#arrow { 
+    font-size: 35px;
+    cursor: pointer;
+    animation: blink 1s steps(5, start) infinite;
+}
+
+@keyframes blink {
+    to{
+        visibility: hidden;
+    }
+}
+
+.rotate {
+    transform: rotate(180deg);
+    transition: 300ms;
+}
+
+#animation {
+    transition: 300ms;
+}
+
+.active{
+    display: block !important;
+}
+
+#about p {
+    padding: 10px;
+    max-width: 1200px;
+    margin: 0 auto;
+    line-height: 1.5;
+}
+
+.form {
+    width: 40%;
+    margin: 0 auto;
+    padding-top: 10px;
+}
+
+.form input {
+    width: 60%;
+    padding: 4px;
+    border: none;
+    border-radius: 5px 0px 0px 5px;
+    margin-top: 5px;
+}
+
+.form button {
+    width: 25%;
+    padding: 5px 8px;
+    background:linear-gradient(to right, gray 50%, black 50%);
+    background-size: 200% 100%;
+    background-position: right bottom;
+    color: #fafafa;
+    font-weight: 600;
+    border: none;
+    border-radius: 0px 5px 5px 0px;
+    cursor: pointer;
+    transition: all 300ms ease-out;
+}
+
+.form button:hover {
+    background-position:left bottom;
+    color: rgb(14, 14, 14);
+}
+
+.flex {
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+ 
+}
+
+.flex div {
+    margin: 2px;
+    flex-basis: 5%;
+}

@@ -1,0 +1,31 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Familia do Coquito"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2021-07-03 10:53:46 "/>
+        <attribute name="created" value="RmFtaWxpYSBkbyBDb3F1aXRvO0RFU0tUT1AtRkFNUklCOzIwMjEtMDctMDM7IjEwOjA3OjExICI7MzkwMg=="/>
+        <attribute name="edited" value="RmFtaWxpYSBkbyBDb3F1aXRvO0RFU0tUT1AtRkFNUklCOzIwMjEtMDctMDM7IjEwOjUzOjQ2ICI7Mjs0MDIw"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="nota1, nota2, nota3, nota4, media" type="Real" array="False" size=""/>
+            <input variable="nota1"/>
+            <input variable="nota2"/>
+            <input variable="nota3"/>
+            <input variable="nota4"/>
+            <assign variable="media" expression="(nota1+nota2+nota3+nota4)/4"/>
+            <output expression="media" newline="True"/>
+            <if expression="media&gt;7">
+                <then>
+                    <output expression="&quot;Parab&#233;ns, voc&#234; est&#225; aprovado!&quot;" newline="True"/>
+                </then>
+                <else>
+                    <output expression="&quot;Infelizmente voc&#234; est&#225; reprovado!&quot;" newline="True"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>
